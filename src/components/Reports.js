@@ -15,7 +15,7 @@ const Reports = () => {
             setReports(response.data);
         }
         getReports()
-    }, [URL]);
+    }, []);
 
     const navigate = useNavigate();
 
@@ -33,7 +33,13 @@ const Reports = () => {
             <div className="centerContent container">
                 <button onClick={toCreate} className="btn btn-primary">Create Report</button>
             </div>
-            <ul>{reports.map((report) => <li className="reportsList" key={report.id}> {report.name} <NavLink to={`/report/${report.id}`}><button className="btn btn-primary">View</button></NavLink>  </li>)}</ul>
+            <ul>{reports.map((report) =>
+                <li
+                    className="reportsList" key={report.id}>
+                    {report.name}
+                    <NavLink to={`/report/${report.id}`}><button className="btn btn-primary">View</button></NavLink>
+                </li>)}
+            </ul>
         </div>
     )
 }

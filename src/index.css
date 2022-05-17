@@ -63,3 +63,12 @@ ul.header li a:hover:not(.active) {
 ul {
   list-style-type: none;
 }
+
+.reportsList {
+  margin-left: 80px;
+}
+
+.pieChart {
+  width: 25%;
+  height: 25%;
+}

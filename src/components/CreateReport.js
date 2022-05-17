@@ -28,7 +28,7 @@ const CreateReport = () => {
             setParkingAreas(response.data.parkingareas);
         }
         getParkingAreas()
-    }, [URL]);
+    }, []);
 
     return (
         <div>
