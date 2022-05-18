@@ -72,3 +72,10 @@ ul {
   width: 25%;
   height: 25%;
 }
+
+.spinner {
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+  width: 100px
+}
